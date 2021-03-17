@@ -20,3 +20,6 @@ for(X_train, Y_tain) in train_loader:
     print('X_train: ', X_train.size(), 'type: ', X_train.type())
     print('X_train: ', X_train.size(), 'type: ', X_train.type())
     break
+
+pltsize = 1
+plt.figure(figsize=(10*pltsize,pltsize))
