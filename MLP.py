@@ -32,3 +32,5 @@ for i in range(10):
     plt.title('Class: ' +str(y_train[i].item()))
 
 class Net(nn.Module):
+    def __init__(self):
+        
