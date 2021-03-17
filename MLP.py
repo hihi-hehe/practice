@@ -1,5 +1,6 @@
-import numpy as numpy
-import matplotlib
+import numpy as np
+import matplotlib.pyplot as plt
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -23,6 +24,11 @@ for(X_train, Y_tain) in train_loader:
 
 pltsize = 1
 plt.figure(figsize=(10*pltsize,pltsize))
+   
+for i in range(10):
+    plt.subplot(1,10,i+1)
+    plt.axis('off')
+    plt.imshow(X_train[i,:,:,:].numpy().reshape(28.28), cmap = "gray_r")
+    plt.title('Class: ' +str(y_train[i].item()))
 
 class Net(nn.Module):
-    
