@@ -33,4 +33,5 @@ for i in range(10):
 
 class Net(nn.Module):
     def __init__(self):
-        super
+        super(Net, self).__init__()
+        
