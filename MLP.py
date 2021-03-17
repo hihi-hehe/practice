@@ -35,3 +35,4 @@ class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
         self.fc1 = nn.Linear(28 *28, 512)
+        self.fc2 = nn.Linear(512,256)
