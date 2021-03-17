@@ -36,3 +36,8 @@ class Net(nn.Module):
         super(Net, self).__init__()
         self.fc1 = nn.Linear(28 *28, 512)
         self.fc2 = nn.Linear(512,256)
+
+
+
+for Epoch in range(1, EPOCHS + 1):
+    train(model, train_loader, optimizer, log_interval = 200)
