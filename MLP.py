@@ -41,3 +41,4 @@ class Net(nn.Module):
 
 for Epoch in range(1, EPOCHS + 1):
     train(model, train_loader, optimizer, log_interval = 200)
+    test_loss, test_accuracy = evaluate(model, test_loader)
