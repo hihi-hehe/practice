@@ -14,3 +14,4 @@ BATCH_SIZE = 32
 EPOCHS = 10
 
 train_dataset = datasets.MNIST(root="/data/MNIST", train = True, download = True, transform = transforms.ToTensor())
+test_dataset = datasets.MNIST(root = "/data/MNIST", train = False, transform = transforms.ToTensor())
