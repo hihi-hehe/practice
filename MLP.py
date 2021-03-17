@@ -23,3 +23,6 @@ for(X_train, Y_tain) in train_loader:
 
 pltsize = 1
 plt.figure(figsize=(10*pltsize,pltsize))
+
+class Net(nn.Module):
+    
